@@ -1,6 +1,8 @@
 ---
 title: "Is it free?"
-icon: "fa-shield"
+icon: "fa-dollar-sign"
 weight: 2
 ---
-Another benefit. Really tell people why they NEED to get this thing. Why is it better?
+PaywallHub is 100% free, and always will be. If you like this website or the browser extensions, you can donate using the "Support Us" button.
+
+Also, sharing the website helps us a lot. You can do it with these buttons:

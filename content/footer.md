@@ -1,1 +1,1 @@
-Footer goes here
+Contact: paywallhub@gmail.com
