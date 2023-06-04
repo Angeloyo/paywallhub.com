@@ -1,0 +1,14 @@
+baseURL: 
+languageCode: en-us
+title: PaywallHub
+canonifyurls: true
+paginate: 3
+theme: "hugo-theme-lean-launch-page"
+# googleAnalytics: "G-123456"
+params:
+  tagline: "We're launching a new, better solution."
+  # twitter: "https://twitter.com/MyNewProduct"
+  # instagram: "https://instagram.com/MyNewProduct"
+  github: "https://github.com/MyNewProduct"
+  images:
+    - "favicon.png"
