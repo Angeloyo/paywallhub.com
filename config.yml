@@ -1,6 +1,6 @@
 baseURL: https://paywallhub.com/
 languageCode: en-us
-title: PaywallHub
+title: PaywallHub | Remove Paywalls for free
 canonifyurls: true
 paginate: 3
 theme: hugo-theme-lean-launch-page-modified
