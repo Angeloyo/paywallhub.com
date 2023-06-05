@@ -30,44 +30,30 @@
 	{{ end }}
 	<h1>{{ .Site.Title }}</h1>
 	<p>{{ .Site.Params.tagline }}</p>
-	<!-- <div id="benefits">
-		{{ range where .Site.Pages "Section" "benefits" }}
-		{{ if in .Path ".md" }}
-			<div>
-				<h2><i class="fas {{ .Params.icon }}"></i>{{ .Title }}</h2>
-				{{ .Content }}
-			</div>
-		{{ end }}
-	{{ end }}
+	<!-- functionality -->
+	<div class="div-functionality">
+		<input id="inputtext" placeholder="Paste the url of the article/website with the paywall" class="input-style" type="text">
+		<div class="buttons">
+			<button id="boton-12ft">
+				<img class="fotoboton" width="30" height="30" src="12ft.png" alt="archive.is logo">
+				Open in 12ft.io
+			</button>
+			<button id="boton-internetarchive">
+				<img class="fotoboton" width="30" height="30" src="internetarchive.png" alt="internetarchive logo">
+				Open in archive.org
+			</button>
+			<button id="boton-archiveis">
+				<img class="fotoboton" width="30" height="30" src="archiveis.png" alt="archive.ph logo">
+				Open in archive.is
+			</button>
+			<!-- <button id="boton-removepaywall">
+				<img width="30" height="30" src="img/removepaywall.png" alt="archive.is logo">
+				Open in removepaywall.com
+			</button> -->
+		</div>
+	</div>
 	
-
-</div> -->
-	<!-- <div id="benefits">
-		{{ range where .Site.Pages "Section" "benefits" }}
-		{{ if in .Path ".md" }}
-			{{ $pathSegments := split .Path "/" }}
-			{{ $fileName := index $pathSegments (sub (len $pathSegments) 1) }}
-			{{ $baseName := index (split $fileName ".") 0 }}
-			{{ if eq $baseName "benefit-1" }}
-				<div>
-					<h2><i class="fas {{ .Params.icon }}"></i>{{ .Title }}</h2>
-					{{ .Content }}
-				</div>
-			{{ else if eq $baseName "benefit-2" }}
-			<div>
-				<h2><i class="fas {{ .Params.icon }}"></i>{{ .Title }}</h2>
-				{{ .Content }}
-			</div>
-			{{ else }}
-				<div>
-					<h2><i class="fas {{ .Params.icon }}"></i>{{ .Title }}</h2>
-					{{ .Content }}
-				</div>
-			{{ end }}
-		{{ end }}
-		{{ end }}
-	</div> -->
-	
+	<!-- end functionality -->
 
 	<div id="benefits">
 		{{ range where .Site.Pages "Section" "benefits" }}
@@ -76,7 +62,12 @@
 				<div>
 					<h2><i class="fas {{ .Params.icon }}"></i>{{ .Title }}</h2>
 					{{ .Content }}
-					<img src="cws.png" alt="chrome web store logo image">
+					<a target="_blank" href="https://chrome.google.com/webstore/category/extensions?hl=es">
+						<img style="width: 80%;" src="cws.png" alt="chrome web store logo image">
+					</a>
+					<a target="_blank" href="https://addons.mozilla.org/es/firefox/">
+						<img style="width: 80%;" src="firefox.png" alt="firefox addons store logo image">
+					</a>
 				</div>
 			{{ else if eq .File.TranslationBaseName "benefit-2" }}
 				<div>
@@ -114,11 +105,6 @@
 		{{ end }}
 	</div>
 	
-	
-	
-
-
-
 	<div>
 		<!-- start kofi widget code -->
 		<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
@@ -135,5 +121,7 @@
 		{{ .Content }}
 		{{ end }}
 	</div>
+
+	<script src="assets/main.js"></script>
 </body>
 </html>
