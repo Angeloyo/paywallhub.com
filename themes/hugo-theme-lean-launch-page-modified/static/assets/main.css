@@ -102,7 +102,7 @@ body{
 
 	#benefits{
 		display: flex;
-		margin: 50px auto 0;
+		margin: 5% auto 0;
 		width: 65%;
 	}
 		#benefits div{
@@ -125,9 +125,32 @@ body{
 
 
 
+.input-style {
+	padding: 10px;
+	border: 2px solid #ccc;
+	border-radius: 5px;
+	font-size: 19px;
+	color: #555;
+	outline: none;
+	width: 35%;
+	height: 30px ;
+	}
+	
+	.input-style:focus {
+	border-color: #007bff;
+	box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+	}
+
 @media (max-width: 950px){
 	#benefits{
-		width: 80%;
+		width: 90%;
+	}
+	.div-functionality{
+		flex-direction: column;
+	}
+	.input-style{
+		margin-bottom: 30px;
+		width: 60%;
 	}
 }
 
@@ -140,6 +163,10 @@ body{
 		width: 90%;
 	}
 
+	.input-style{
+		width: 80%;
+	}
+
 	#benefits{
 		display: block;
 		width: 90%;
@@ -149,21 +176,6 @@ body{
 		}
 }
 
-.input-style {
-	padding: 10px;
-	border: 2px solid #ccc;
-	border-radius: 5px;
-	font-size: 19px;
-	color: #555;
-	outline: none;
-	width: 35%;
-	height: 10% ;
-  }
-  
-  .input-style:focus {
-	border-color: #007bff;
-	box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-  }
   
 /* mit license: https://uiverse.io/barisdogansutcu/black-duck-67 */
 button {
@@ -209,13 +221,13 @@ button {
    }
 
    .fotoboton{
-	width: 10%;
-	height: 10%;
+	width: 40px;
+	height: 40px;
 	margin: 0;
    }
 
    .buttons{
-	width: 35%;
+	width: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
