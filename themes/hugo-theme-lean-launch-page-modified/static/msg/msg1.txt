@@ -1,5 +1,5 @@
 {
-    "message": "Archive.is website is down right now. You can suggest improvements for the extension or report errors via paywallhub@gmail.com! Thank you!",
+    "message": "You can suggest improvements for the extension or report errors via paywallhub@gmail.com! Thank you!",
     "style": {
         "color": "#a9a9a9",
         "font-size": "12px",
