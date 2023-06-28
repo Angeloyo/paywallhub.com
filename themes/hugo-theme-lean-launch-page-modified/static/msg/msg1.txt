@@ -3,6 +3,6 @@
     "style": {
         "color": "#a9a9a9",
         "font-size": "12px",
-	    "width" : "350px"
+	    "width" : "320px"
     }
 }
